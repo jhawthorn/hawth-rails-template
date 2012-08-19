@@ -3,7 +3,7 @@ module PaginationHelper
     paginate_info(records, options) + will_paginate(records, options)
   end
   def paginate_info records, options={}
-    content_tag(:div, page_entries_info(records, options), :class => 'pagination-info pagination-centered')
+    content_tag(:div, page_entries_info(records, options), class: 'pagination-info pagination-centered')
   end
   def will_paginate records, options={}
     options = {

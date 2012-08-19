@@ -9,7 +9,7 @@ module BootstrapHelper
     return unless flash[type].present?
     content_tag(:div, class: "alert alert-block alert-#{css_class} fade in") do
       button_tag("×", type: 'button', class: 'close', data: {dismiss: 'alert'}) +
-      content_tag(:h4, t(type, :scope => 'flash.header'), class: 'alert-heading') +
+      content_tag(:h4, t(type, scope: 'flash.header'), class: 'alert-heading') +
       content_tag(:p, flash[type])
     end
   end
