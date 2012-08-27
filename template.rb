@@ -48,6 +48,7 @@ file 'app/views/layouts/application.html.haml', template('application.html.haml'
 file 'app/views/layouts/devise.html.haml', template('devise.html.haml')
 file 'config/initializers/show_for.rb', template('show_for.rb'), force: true
 file 'config/locales/en.yml', template('en.yml'), force: true
+file 'config/locales/cancan.yml', template('cancan.yml')
 file 'config/navigation.rb', template('navigation.rb')
 file 'test/test_helper.rb', template('test_helper.rb'), force: true
 
